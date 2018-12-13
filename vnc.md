@@ -4,7 +4,5 @@
 
 ```bash
 yum -y install tigervnc-server &>/dev/null
-x0vncserver \
-SecurityTypes=None \
-AlwaysShared=1 AcceptKeyEvents=0 AcceptPointerEvents=0 &
+x0vncserver SecurityTypes=None AlwaysShared=1 AcceptKeyEvents=0 AcceptPointerEvents=0 rfbport=5999 &
 ```
